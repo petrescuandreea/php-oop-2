@@ -143,27 +143,29 @@
             . "<br>";
         }
      }
+
+     $person1 = new Person("Mario", "Rossi");
+     $person2 = new Person("Marta", "Ambrosio");
+     $person3 = new Person("Lucia", "Verdi");
+     
+     $employee1 = new Employee("Maria", "Filippi", "1200€");
+     $employee2 = new Employee("Mirko", "Greco", "1400€");
+     $employee3 = new Employee("Francesco", "Moretti", "1150€");
+     
+     
+     
+     $person1 -> setDateOfBirth("12-02-1982");
+     $person2 -> setDateOfBirth("16-09-1993");
+     $person3 -> setDateOfBirth("24-11-1989");
+     
+     $employee1 -> setDateOfHiring("10-01-2022");
+     $employee2 -> setDateOfHiring("05-06-2021");
+     $employee3 -> setDateOfHiring("15-07-2021");
+
     ?>
 </head>
 <body>
     <?php
-        $person1 = new Person("Mario", "Rossi");
-        $person2 = new Person("Marta", "Ambrosio");
-        $person3 = new Person("Lucia", "Verdi");
-
-        $employee1 = new Employee("Maria", "Filippi", "1200€");
-        $employee2 = new Employee("Mirko", "Greco", "1400€");
-        $employee3 = new Employee("Francesco", "Moretti", "1150€");
-
-
-
-        $person1 -> setDateOfBirth("12-02-1982");
-        $person2 -> setDateOfBirth("16-09-1993");
-        $person3 -> setDateOfBirth("24-11-1989");
-
-        $employee1 -> setDateOfHiring("10-01-2022");
-        $employee2 -> setDateOfHiring("05-06-2021");
-        $employee3 -> setDateOfHiring("15-07-2021");
 
         echo $person1;
         echo $person2;
